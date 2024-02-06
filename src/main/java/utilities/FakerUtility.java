@@ -1,0 +1,55 @@
+package utilities;
+
+import com.github.javafaker.Address;
+import com.github.javafaker.Faker;
+import com.github.javafaker.Internet;
+
+public class FakerUtility {
+	public static String getFakeFirstName() {
+
+		Faker faker = new Faker();
+
+		Address address = faker.address();
+
+		String text = address.firstName();
+
+		return text;
+
+	}
+
+	public static String getFakeLastName() {
+
+		Faker faker = new Faker();
+
+		Address address = faker.address();
+
+		String text = address.lastName();
+
+		return text;
+
+	}
+
+	public String getFakeCityName() {
+
+		Faker faker = new Faker();
+
+		Address address = faker.address();
+
+		String text = address.cityName();
+
+		return text;
+
+	}
+
+	public String getFakeEmailAddress() {
+
+		Faker faker = new Faker();
+
+		Internet internet = faker.internet();
+
+		String text = internet.emailAddress();
+
+		return text;
+
+	}
+}
