@@ -1,0 +1,17 @@
+<suite name ="project1">
+<test name = "test1">
+<groups>
+<run>
+<include  name = "critical">
+</include>
+</run>
+</groups>
+<classes>
+<class name= "groceryTestCases.PushNotificationTestCases">
+
+</class>
+
+</classes>
+</test>
+
+</suite>
